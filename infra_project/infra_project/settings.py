@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# Application definition...
 
 INSTALLED_APPS = [
     'infra_app.apps.InfraAppConfig',
