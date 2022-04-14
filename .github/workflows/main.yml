@@ -58,6 +58,6 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          sudo docker pull abbadon666666/infra_actions
+          sudo docker pull abbadon666666/infra_actions:latest
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 abbadon666666/infra_actions
+          sudo docker run --rm -d -p 5000:5000 abbadon666666/infra_actions:latest
